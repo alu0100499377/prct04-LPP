@@ -36,3 +36,5 @@ class Complejo
 		imaginario = Complejo.new(a, b)
 		return imaginario
 	end
+
+end

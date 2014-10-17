@@ -37,4 +37,11 @@ class Complejo
 		return imaginario
 	end
 
+	def escalar(x, y)
+		a = @real*x
+		b = @imag*y
+		imaginario = Complejo.new(a, b)
+		return imaginario
+	end
+
 end
