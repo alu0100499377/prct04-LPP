@@ -10,4 +10,8 @@ class Test_Imaginario < Tets::Unit::TestCase
 	def test_suma
 		assert_equal("2 2i", Fraccion.new(1,1).suma(1,1).to_s)
 	end
+
+	def test_resta
+		assert_equal("2 2i", Fraccion.new(2,2).resta(1,1).to_s)
+	end
 end
