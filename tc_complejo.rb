@@ -1,17 +1,19 @@
-require "./imaginario.rb"
+require "src/complejo.rb"
 require "test/unit"
 
-class Test_Imaginario < Tets::Unit::TestCase
+class TestComplejo < Tets::Unit::TestCase
 	
-	def test_mostrar
-		assert_equal("1 1i", Complejo.new(1,1).to_s)
+	def setup
+		@origen = Complejo.new(0,0)
+		@unidad = Complejo.new(1,1)
+	end
+	
+	def test_1
+		assert_equal("(0,0)", @origen.to_s)
+		assert_equal("(5,5)", (@unidad*5).to_s) #escalar
+		assert_equal("(0,0)", (@unidad*@origen).to_s) #producto
+		assert_equal("(1,1)", (@origen + @unidad).to_s)
 	end
 
-	def test_suma
-		assert_equal("2 2i", Fraccion.new(1,1).suma(1,1).to_s)
-	end
-
-	def test_resta
-		assert_equal("2 2i", Fraccion.new(2,2).resta(1,1).to_s)
-	end
+	
 end
