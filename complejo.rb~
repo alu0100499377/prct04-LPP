@@ -8,3 +8,10 @@ class Complejo
 	def to_s
 		"#{@real} #{@imag}i"
 	end
+
+	def suma(x, y)
+		a = @real + x
+		b = @imag + y
+		imaginario = Complejo.new(a, b)
+		return imaginario
+	end
