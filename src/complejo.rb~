@@ -24,7 +24,7 @@ class Complejo
 			Complejo.new((@real * value.x) - (@imag * value.y), (@real * value.y) + (@imag * value.x))
 	end
 
-	def / (value) # division
+	def / (value)
 		a = (value.x * value.x) + (value.y * value*y) 
 		Complejo.new( ((@real * value.x) + (@imag * value.y)) / a , ((@imag * value.x) - (@real * value.y)) / a  )
 	end
