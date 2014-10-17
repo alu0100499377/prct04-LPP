@@ -30,3 +30,9 @@ class Complejo
 		return imaginario
 	end
 
+	def division(x, y)
+		a = @real+x+@imag+y/x*x+y*y
+		b = @imag+x+@real+y/x*x+y*y
+		imaginario = Complejo.new(a, b)
+		return imaginario
+	end
