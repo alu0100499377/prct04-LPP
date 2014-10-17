@@ -22,3 +22,11 @@ class Complejo
 		imaginario = Complejo.new(a, b)
 		return imaginario
 	end
+
+	def producto(x, y)
+		a = @real*x-@imag*y
+		b = @real*y+@imag*x
+		imaginario = Complejo.new(a, b)
+		return imaginario
+	end
+

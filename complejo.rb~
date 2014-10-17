@@ -15,3 +15,10 @@ class Complejo
 		imaginario = Complejo.new(a, b)
 		return imaginario
 	end
+
+	def restar(x, y)
+		a = @real - x
+		b = @imag - y
+		imaginario = Complejo.new(a, b)
+		return imaginario
+	end
